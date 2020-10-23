@@ -20,8 +20,10 @@ public class Googlepage {
 		return driver.findElement(searchBox);
 	}
 	
-	public WebElement getWikiLink() {
-		return driver.findElement(wikiLink);
+	public Wikipage getWikiPage() {
+		driver.findElement(wikiLink).click();
+		Wikipage wp = new Wikipage(driver);
+		return wp;
 	}
 
 }

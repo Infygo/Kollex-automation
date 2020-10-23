@@ -8,34 +8,44 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import pageObjects.Googlepage;
+import pageObjects.Wikipage;
 import resources.Initialisation;
 
-public class GooglePageTest extends Initialisation {
+public class WikipageTest extends Initialisation {
 	public WebDriver driver;
 	Googlepage gp;
+	Wikipage wp;
 
 	public void setUp(String browser) throws IOException, InterruptedException {
 		driver = intialiseDriver(browser);
-		driver.get(props.getProperty("googleurl"));
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 
-	// Test1 - google page to Wikipedia
-	// page transition happens here
-	public void googleToWiki() {
+	// Test2 Giga berlin
+	public void searchGigaBerlin() {
+		googleWikiNavigate();
+		wp = new Wikipage(driver);
+		String wikiSearch = props.getProperty("wikisearchtext");
+		wp.getWikiSearchBox().sendKeys(wikiSearch);
+		wp.getWikiSearchBox().sendKeys(Keys.ENTER);
+		Assert.assertTrue(driver.getTitle().contains("Giga Berlin"));
+		System.out.println("Test passed");
+
+	}
+
+	private Wikipage googleWikiNavigate() {
+		driver.get(props.getProperty("googleurl"));
 		gp = new Googlepage(driver);
 		String wikiurl = props.getProperty("wikiurl");
 		gp.getSearchBox().sendKeys(wikiurl);
 		gp.getSearchBox().sendKeys(Keys.ENTER);
-		gp.getWikiPage();
-		Assert.assertEquals(driver.getTitle(), "Wikipedia");
-        System.out.println("Test passed");
+		return gp.getWikiPage();
 	}
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		GooglePageTest gpt = new GooglePageTest();
-		gpt.setUp("chrome");
-		gpt.googleToWiki();
+		WikipageTest wpt = new WikipageTest();
+		wpt.setUp("chrome");
+		wpt.searchGigaBerlin();
 	}
 
 }
