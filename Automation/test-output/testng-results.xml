@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="67781" started-at="2020-10-24T13:51:47 MESZ" finished-at="2020-10-24T13:52:55 MESZ">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="42054" started-at="2020-10-24T13:51:47 MESZ" finished-at="2020-10-24T13:52:30 MESZ">
+      <class name="Kollex.Automation.GooglePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.GooglePageTest@10bbd20a]" name="setUp" is-config="true" duration-ms="5908" started-at="2020-10-24T13:51:48 MESZ" finished-at="2020-10-24T13:51:53 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="googleToWiki()[pri:0, instance:Kollex.Automation.GooglePageTest@10bbd20a]" name="googleToWiki" duration-ms="3666" started-at="2020-10-24T13:51:53 MESZ" finished-at="2020-10-24T13:51:57 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleToWiki -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.GooglePageTest@10bbd20a]" name="tearDown" is-config="true" duration-ms="631" started-at="2020-10-24T13:51:57 MESZ" finished-at="2020-10-24T13:51:58 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Kollex.Automation.GooglePageTest -->
+      <class name="Kollex.Automation.WikipageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@48503868]" name="setUp" is-config="true" duration-ms="3208" started-at="2020-10-24T13:51:58 MESZ" finished-at="2020-10-24T13:52:01 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getGigaBerlinData()[pri:0, instance:Kollex.Automation.WikipageTest@48503868]" name="getGigaBerlinData" duration-ms="17040" started-at="2020-10-24T13:52:01 MESZ" finished-at="2020-10-24T13:52:18 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGigaBerlinData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@48503868]" name="tearDown" is-config="true" duration-ms="658" started-at="2020-10-24T13:52:18 MESZ" finished-at="2020-10-24T13:52:19 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@48503868]" name="setUp" is-config="true" duration-ms="3219" started-at="2020-10-24T13:52:19 MESZ" finished-at="2020-10-24T13:52:22 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchGigaBerlin()[pri:0, instance:Kollex.Automation.WikipageTest@48503868]" name="searchGigaBerlin" duration-ms="7063" started-at="2020-10-24T13:52:22 MESZ" finished-at="2020-10-24T13:52:29 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGigaBerlin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@48503868]" name="tearDown" is-config="true" duration-ms="613" started-at="2020-10-24T13:52:29 MESZ" finished-at="2020-10-24T13:52:30 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Kollex.Automation.WikipageTest -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="25701" started-at="2020-10-24T13:52:30 MESZ" finished-at="2020-10-24T13:52:55 MESZ">
+      <class name="Kollex.Automation.GooglePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.GooglePageTest@7a1ebcd8]" name="setUp" is-config="true" duration-ms="4215" started-at="2020-10-24T13:52:30 MESZ" finished-at="2020-10-24T13:52:34 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="googleToWiki()[pri:0, instance:Kollex.Automation.GooglePageTest@7a1ebcd8]" name="googleToWiki" duration-ms="1035" started-at="2020-10-24T13:52:34 MESZ" finished-at="2020-10-24T13:52:35 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleToWiki -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.GooglePageTest@7a1ebcd8]" name="tearDown" is-config="true" duration-ms="729" started-at="2020-10-24T13:52:35 MESZ" finished-at="2020-10-24T13:52:36 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Kollex.Automation.GooglePageTest -->
+      <class name="Kollex.Automation.WikipageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@5faeada1]" name="setUp" is-config="true" duration-ms="3237" started-at="2020-10-24T13:52:36 MESZ" finished-at="2020-10-24T13:52:39 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getGigaBerlinData()[pri:0, instance:Kollex.Automation.WikipageTest@5faeada1]" name="getGigaBerlinData" duration-ms="8378" started-at="2020-10-24T13:52:39 MESZ" finished-at="2020-10-24T13:52:47 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGigaBerlinData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@5faeada1]" name="tearDown" is-config="true" duration-ms="1083" started-at="2020-10-24T13:52:47 MESZ" finished-at="2020-10-24T13:52:48 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@5faeada1]" name="setUp" is-config="true" duration-ms="3226" started-at="2020-10-24T13:52:48 MESZ" finished-at="2020-10-24T13:52:51 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchGigaBerlin()[pri:0, instance:Kollex.Automation.WikipageTest@5faeada1]" name="searchGigaBerlin" duration-ms="2963" started-at="2020-10-24T13:52:51 MESZ" finished-at="2020-10-24T13:52:54 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGigaBerlin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@5faeada1]" name="tearDown" is-config="true" duration-ms="830" started-at="2020-10-24T13:52:54 MESZ" finished-at="2020-10-24T13:52:55 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Kollex.Automation.WikipageTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
