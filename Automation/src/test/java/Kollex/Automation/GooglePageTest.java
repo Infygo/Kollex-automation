@@ -22,7 +22,7 @@ public class GooglePageTest extends Initialisation {
 	public WebDriver driver;
 	Googlepage gp;
 	private static Logger log = LogManager.getLogger(GooglePageTest.class.getName());
-	File screenShotFolder = new File(System.getProperty("user.dir") + "\\src\\main\\java\\screenshots");
+	File screenShotFolder = new File(System.getProperty("user.dir") + "\\src\\main\\java\\csvdata_screenshots");
 
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
@@ -33,7 +33,6 @@ public class GooglePageTest extends Initialisation {
 	}
 
 	// Test1 - google page to Wikipedia
-	// page transition happens here
 	@Test
 	public void googleToWiki() throws IOException {
 		FileUtils.cleanDirectory(screenShotFolder);
@@ -46,18 +45,10 @@ public class GooglePageTest extends Initialisation {
 		Assert.assertEquals(driver.getTitle(), "Wikipedia");
 		log.info("Google page to Wikipedia page - Test success");
 	}
-	
+
 	@AfterMethod(alwaysRun = true)
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
-    
-	/*
-	public static void main(String[] args) throws IOException, InterruptedException {
-		GooglePageTest gpt = new GooglePageTest();
-		gpt.setUp("chrome");
-		gpt.googleToWiki();
-	}
-	*/
 
 }

@@ -5,13 +5,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,7 +28,7 @@ public class WikipageTest extends Initialisation {
 	File screenShotFolder = new File(System.getProperty("user.dir") + "\\src\\main\\java\\screenshots");
 	Googlepage gp;
 	Wikipage wp;
-    
+
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(String browser) throws IOException, InterruptedException {
@@ -40,7 +37,7 @@ public class WikipageTest extends Initialisation {
 		wp = new Wikipage(driver);
 	}
 
-	// Test2 Giga berlin
+	// Test2 Giga berlin Wikipedia 
 	@Test(priority = 0)
 	public void searchGigaBerlin() throws IOException {
 		wp = googleWikiNavigate();
@@ -60,17 +57,19 @@ public class WikipageTest extends Initialisation {
 		wp = googleWikiNavigate();
 		String wikiSearch = props.getProperty("wikisearchtext");
 		String mapsUrl = props.getProperty("googlemaps");
+
 		wp.getWikiSearchBox().sendKeys(wikiSearch);
 		wp.getWikiSearchBox().sendKeys(Keys.ENTER);
+		String gigaBerlin = driver.getTitle();
 		WebDriverWait w = new WebDriverWait(driver, 10);
 
 		String coordinates = wp.getCoordinates().getText();
 		takeScreenShot(driver, "Test3_Coordinates.png");
-		
+
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", wp.getLogisticHeader());
 		String logisticsData = wp.getLogisticsPara();
 		takeScreenShot(driver, "Test3_Logistics.png");
-		
+
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", wp.getSiteConcerHeader());
 		String siteConcernsData = wp.getSiteConcernsPara();
 		takeScreenShot(driver, "Test3_Siteconcerns.png");
@@ -84,6 +83,7 @@ public class WikipageTest extends Initialisation {
 		wp.getMapSearchBox().sendKeys(Keys.ENTER);
 		w.until(ExpectedConditions.visibilityOf(wp.getLocation()));
 		Assert.assertTrue(wp.getLocation().getText().contains("Grünheide"));
+		copyToCsv(gigaBerlin, coordinates, logisticsData, siteConcernsData);
 		log.info("Giga Berlin data retrieve - Test success");
 
 	}
@@ -96,19 +96,10 @@ public class WikipageTest extends Initialisation {
 		gp.getSearchBox().sendKeys(Keys.ENTER);
 		return gp.getWikiPage();
 	}
-	
+
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 	}
-    
-	/*
-	public static void main(String[] args) throws IOException, InterruptedException {
-		WikipageTest wpt = new WikipageTest();
-		wpt.setUp("firefox");
-		// wpt.searchGigaBerlin();
-		wpt.getGigaBerlinData();
-	}
-	*/
 
 }
