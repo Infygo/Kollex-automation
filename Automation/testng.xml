@@ -18,7 +18,7 @@
 			<class name="Kollex.Automation.GooglePageTest"/>
 			<class name="Kollex.Automation.WikipageTest"/>
 		</classes>
-	</test> 
+	</test>   
 	<!-- Firefox Test -->
 	
 </suite> <!-- Suite -->
