@@ -1,11 +1,17 @@
 package Kollex.Automation;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,6 +27,8 @@ import resources.Initialisation;
 
 public class WikipageTest extends Initialisation {
 	public WebDriver driver;
+	private static Logger log = LogManager.getLogger(WikipageTest.class.getName());
+	File screenShotFolder = new File(System.getProperty("user.dir") + "\\src\\main\\java\\screenshots");
 	Googlepage gp;
 	Wikipage wp;
     
@@ -33,21 +41,22 @@ public class WikipageTest extends Initialisation {
 	}
 
 	// Test2 Giga berlin
-	@Test
-	public void searchGigaBerlin() {
+	@Test(priority = 0)
+	public void searchGigaBerlin() throws IOException {
 		wp = googleWikiNavigate();
 		WebDriverWait w = new WebDriverWait(driver, 10);
 		String wikiSearch = props.getProperty("wikisearchtext");
 		wp.getWikiSearchBox().sendKeys(wikiSearch);
 		wp.getWikiSearchBox().sendKeys(Keys.ENTER);
 		w.until(ExpectedConditions.titleContains("Giga Berlin"));
+		takeScreenShot(driver, "Test2_Gigaberlin.png");
 		Assert.assertTrue(driver.getTitle().contains("Giga Berlin"));
-		System.out.println("Test passed");
+		log.info("Wikipage Giga Berlin- Test success ");
 	}
 
 	// Test3 - Get Coordinate , Logistics, Site concerns
-	@Test
-	public void getGigaBerlinData() throws InterruptedException {
+	@Test(priority = 1)
+	public void getGigaBerlinData() throws InterruptedException, IOException {
 		wp = googleWikiNavigate();
 		String wikiSearch = props.getProperty("wikisearchtext");
 		String mapsUrl = props.getProperty("googlemaps");
@@ -56,12 +65,15 @@ public class WikipageTest extends Initialisation {
 		WebDriverWait w = new WebDriverWait(driver, 10);
 
 		String coordinates = wp.getCoordinates().getText();
-		System.out.println(coordinates);
+		takeScreenShot(driver, "Test3_Coordinates.png");
+		
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", wp.getLogisticHeader());
 		String logisticsData = wp.getLogisticsPara();
+		takeScreenShot(driver, "Test3_Logistics.png");
+		
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", wp.getSiteConcerHeader());
 		String siteConcernsData = wp.getSiteConcernsPara();
-
-		System.out.println(logisticsData);
-		System.out.println(siteConcernsData);
+		takeScreenShot(driver, "Test3_Siteconcerns.png");
 
 		// Open google Maps in new tab and check the coordinates
 		((JavascriptExecutor) driver).executeScript("window.open()");
@@ -72,7 +84,7 @@ public class WikipageTest extends Initialisation {
 		wp.getMapSearchBox().sendKeys(Keys.ENTER);
 		w.until(ExpectedConditions.visibilityOf(wp.getLocation()));
 		Assert.assertTrue(wp.getLocation().getText().contains("Grünheide"));
-		System.out.println("Test passed");
+		log.info("Giga Berlin data retrieve - Test success");
 
 	}
 
