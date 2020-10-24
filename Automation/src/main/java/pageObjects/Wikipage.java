@@ -16,6 +16,8 @@ public class Wikipage extends Initialisation {
 	// pageproperties 
 	private By wikiSearchBox = By.xpath("//input[@id='searchInput']");
 	private By coordinates = By.xpath("//span[@class='geo-dec']");
+	private By mapSearchBox = By.xpath("//input[@id='searchboxinput']");
+	private By location = By.xpath("//span[contains(text(),'Grünheide')]");
 	
 	// Element methods 
 	public WebElement getWikiSearchBox() {
@@ -24,6 +26,14 @@ public class Wikipage extends Initialisation {
 	
 	public WebElement getCoordinates() {
 		return driver.findElement(coordinates);
+	}
+	
+	public WebElement getMapSearchBox() {
+		return driver.findElement(mapSearchBox);
+	}
+	
+	public WebElement getLocation() {
+		return driver.findElement(location);
 	}
 	
 	public String getLogisticsPara() {

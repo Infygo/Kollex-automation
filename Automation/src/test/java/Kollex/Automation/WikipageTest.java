@@ -1,8 +1,10 @@
 package Kollex.Automation;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -36,6 +38,7 @@ public class WikipageTest extends Initialisation {
 	public void getGigaBerlinData() {
 		wp = googleWikiNavigate();
 		String wikiSearch = props.getProperty("wikisearchtext");
+		String mapsUrl = props.getProperty("googlemaps");
 		wp.getWikiSearchBox().sendKeys(wikiSearch);
 		wp.getWikiSearchBox().sendKeys(Keys.ENTER);
 
@@ -46,6 +49,16 @@ public class WikipageTest extends Initialisation {
 
 		System.out.println(logisticsData);
 		System.out.println(siteConcernsData);
+
+		// Open google Maps in new tab and check the coordinates
+		((JavascriptExecutor) driver).executeScript("window.open()");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		driver.get(mapsUrl);
+		wp.getMapSearchBox().sendKeys(coordinates);
+		wp.getMapSearchBox().sendKeys(Keys.ENTER);
+		Assert.assertTrue(wp.getLocation().getText().contains("Grünheide"));
+		System.out.println("Test passed");
 
 	}
 
