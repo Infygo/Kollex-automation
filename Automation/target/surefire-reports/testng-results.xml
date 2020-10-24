@@ -2,67 +2,67 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="30314" started-at="2020-10-24T18:44:56 MESZ" finished-at="2020-10-24T18:45:27 MESZ">
+  <suite name="Surefire suite" duration-ms="31347" started-at="2020-10-24T23:10:20 MESZ" finished-at="2020-10-24T23:10:51 MESZ">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="30314" started-at="2020-10-24T18:44:56 MESZ" finished-at="2020-10-24T18:45:27 MESZ">
+    <test name="Surefire test" duration-ms="31347" started-at="2020-10-24T23:10:20 MESZ" finished-at="2020-10-24T23:10:51 MESZ">
       <class name="Kollex.Automation.GooglePageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.GooglePageTest@4d1c00d0]" name="setUp" is-config="true" duration-ms="5971" started-at="2020-10-24T18:44:56 MESZ" finished-at="2020-10-24T18:45:02 MESZ">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.GooglePageTest@fbd1f6]" name="setUp" is-config="true" duration-ms="4891" started-at="2020-10-24T23:10:20 MESZ" finished-at="2020-10-24T23:10:25 MESZ">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleToWiki()[pri:0, instance:Kollex.Automation.GooglePageTest@4d1c00d0]" name="googleToWiki" duration-ms="1974" started-at="2020-10-24T18:45:02 MESZ" finished-at="2020-10-24T18:45:04 MESZ">
+        <test-method status="PASS" signature="googleToWiki()[pri:0, instance:Kollex.Automation.GooglePageTest@fbd1f6]" name="googleToWiki" duration-ms="2703" started-at="2020-10-24T23:10:25 MESZ" finished-at="2020-10-24T23:10:28 MESZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleToWiki -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.GooglePageTest@4d1c00d0]" name="tearDown" is-config="true" duration-ms="881" started-at="2020-10-24T18:45:04 MESZ" finished-at="2020-10-24T18:45:05 MESZ">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.GooglePageTest@fbd1f6]" name="tearDown" is-config="true" duration-ms="1111" started-at="2020-10-24T23:10:28 MESZ" finished-at="2020-10-24T23:10:29 MESZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Kollex.Automation.GooglePageTest -->
       <class name="Kollex.Automation.WikipageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@4b2bac3f]" name="setUp" is-config="true" duration-ms="3733" started-at="2020-10-24T18:45:05 MESZ" finished-at="2020-10-24T18:45:09 MESZ">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@1ce24091]" name="setUp" is-config="true" duration-ms="3097" started-at="2020-10-24T23:10:29 MESZ" finished-at="2020-10-24T23:10:32 MESZ">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getGigaBerlinData()[pri:0, instance:Kollex.Automation.WikipageTest@4b2bac3f]" name="getGigaBerlinData" duration-ms="8698" started-at="2020-10-24T18:45:09 MESZ" finished-at="2020-10-24T18:45:18 MESZ">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getGigaBerlinData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@4b2bac3f]" name="tearDown" is-config="true" duration-ms="1151" started-at="2020-10-24T18:45:18 MESZ" finished-at="2020-10-24T18:45:19 MESZ">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@4b2bac3f]" name="setUp" is-config="true" duration-ms="3718" started-at="2020-10-24T18:45:19 MESZ" finished-at="2020-10-24T18:45:23 MESZ">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchGigaBerlin()[pri:0, instance:Kollex.Automation.WikipageTest@4b2bac3f]" name="searchGigaBerlin" duration-ms="3293" started-at="2020-10-24T18:45:23 MESZ" finished-at="2020-10-24T18:45:26 MESZ">
+        <test-method status="PASS" signature="searchGigaBerlin()[pri:0, instance:Kollex.Automation.WikipageTest@1ce24091]" name="searchGigaBerlin" duration-ms="4131" started-at="2020-10-24T23:10:32 MESZ" finished-at="2020-10-24T23:10:36 MESZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGigaBerlin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@4b2bac3f]" name="tearDown" is-config="true" duration-ms="866" started-at="2020-10-24T18:45:26 MESZ" finished-at="2020-10-24T18:45:27 MESZ">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@1ce24091]" name="tearDown" is-config="true" duration-ms="616" started-at="2020-10-24T23:10:36 MESZ" finished-at="2020-10-24T23:10:36 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Kollex.Automation.WikipageTest@1ce24091]" name="setUp" is-config="true" duration-ms="3090" started-at="2020-10-24T23:10:36 MESZ" finished-at="2020-10-24T23:10:40 MESZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getGigaBerlinData()[pri:1, instance:Kollex.Automation.WikipageTest@1ce24091]" name="getGigaBerlinData" duration-ms="11015" started-at="2020-10-24T23:10:40 MESZ" finished-at="2020-10-24T23:10:51 MESZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGigaBerlinData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Kollex.Automation.WikipageTest@1ce24091]" name="tearDown" is-config="true" duration-ms="660" started-at="2020-10-24T23:10:51 MESZ" finished-at="2020-10-24T23:10:51 MESZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
