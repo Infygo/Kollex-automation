@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="31.908" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\vravindran\Desktop\Kollex automation\Automation\target\test-classes;C:\Users\vravindran\Desktop\Kollex automation\Automation\target\classes;C:\catalysts\dev\poi\maven2\junit\junit\4.13.1\junit-4.13.1.jar;C:\catalysts\dev\poi\maven2\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\catalysts\dev\poi\maven2\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\catalysts\dev\poi\maven2\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\catalysts\dev\poi\maven2\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\catalysts\dev\poi\maven2\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\catalysts\dev\poi\maven2\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\catalysts\dev\poi\maven2\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\catalysts\dev\poi\maven2\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\catalysts\dev\poi\maven2\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\catalysts\dev\poi\maven2\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\catalysts\dev\poi\maven2\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\catalysts\dev\poi\maven2\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\catalysts\dev\poi\maven2\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\catalysts\dev\poi\maven2\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\catalysts\dev\poi\maven2\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\catalysts\dev\poi\maven2\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\catalysts\dev\poi\maven2\javax\inject\javax.inject\1\javax.inject-1.jar;C:\catalysts\dev\poi\maven2\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\catalysts\dev\poi\maven2\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\catalysts\dev\poi\maven2\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\catalysts\dev\poi\maven2\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\catalysts\dev\poi\maven2\commons-io\commons-io\2.7\commons-io-2.7.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="user.country.format" value="DE"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\VRAVIN~1\AppData\Local\Temp\surefire3588359313068305249\surefirebooter7151307911526450915.jar C:\Users\vravindran\AppData\Local\Temp\surefire3588359313068305249 2020-10-24T18-44-54_085-jvmRun1 surefire8484851087729513595tmp surefire_06190683082900385445tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\vravindran\Desktop\Kollex automation\Automation\target\test-classes;C:\Users\vravindran\Desktop\Kollex automation\Automation\target\classes;C:\catalysts\dev\poi\maven2\junit\junit\4.13.1\junit-4.13.1.jar;C:\catalysts\dev\poi\maven2\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\catalysts\dev\poi\maven2\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\catalysts\dev\poi\maven2\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\catalysts\dev\poi\maven2\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\catalysts\dev\poi\maven2\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\catalysts\dev\poi\maven2\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\catalysts\dev\poi\maven2\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\catalysts\dev\poi\maven2\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\catalysts\dev\poi\maven2\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\catalysts\dev\poi\maven2\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\catalysts\dev\poi\maven2\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\catalysts\dev\poi\maven2\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\catalysts\dev\poi\maven2\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\catalysts\dev\poi\maven2\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\catalysts\dev\poi\maven2\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\catalysts\dev\poi\maven2\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\catalysts\dev\poi\maven2\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\catalysts\dev\poi\maven2\javax\inject\javax.inject\1\javax.inject-1.jar;C:\catalysts\dev\poi\maven2\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\catalysts\dev\poi\maven2\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\catalysts\dev\poi\maven2\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\catalysts\dev\poi\maven2\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\catalysts\dev\poi\maven2\commons-io\commons-io\2.7\commons-io-2.7.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vravindran"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="basedir" value="C:\Users\vravindran\Desktop\Kollex automation\Automation"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\VRAVIN~1\AppData\Local\Temp\surefire3588359313068305249\surefirebooter7151307911526450915.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="user.name" value="vravindran"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="firefox"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\catalysts\dev\poi\maven2"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\VRAVIN~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="user.dir" value="C:\Users\vravindran\Desktop\Kollex automation\Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="user.language.format" value="de"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\PuTTY\;C:\Program Files\TortoiseGit\bin;C:\Program Files\TortoiseSVN\bin;C:\HashiCorp\Vagrant\bin;C:\catalysts\sdk\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\vravindran\AppData\Local\Android\Sdk\bin;C:\Users\vravindran\AppData\Local\Android\Sdk\tools;C:\Users\vravindran\AppData\Local\Android\Sdk\platform-tools;C:\Users\vravindran\Desktop\selenium installation\apache-ant-1.10.8\bin;C:\Program Files\nodejs;C:\Users\vravindran\AppData\Local\Continuum\anaconda3;C:\Users\vravindran\AppData\Local\Continuum\anaconda3\Library\mingw-w64\bin;C:\Users\vravindran\AppData\Local\Continuum\anaconda3\Library\usr\bin;C:\Users\vravindran\AppData\Local\Continuum\anaconda3\Library\bin;C:\Users\vravindran\AppData\Local\Continuum\anaconda3\Scripts;C:\Users\vravindran\AppData\Local\Continuum\anaconda3\bin;C:\Users\vravindran\AppData\Local\Continuum\anaconda3\condabin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\nodejs;C:\Program Files\PuTTY;C:\Program Files\TortoiseGit\bin;C:\Program Files\TortoiseSVN\bin;C:\HashiCorp\Vagrant\bin;C:\catalysts\sdk\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;.;C:\Windows\System32\OpenSSH;C:\Users\vravindran\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\vravindran\AppData\Local\Programs\Python\Python;C:\Users\vravindran\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="googleToWiki" classname="Kollex.Automation.GooglePageTest" time="1.975"/>
+  <testcase name="getGigaBerlinData" classname="Kollex.Automation.WikipageTest" time="8.698"/>
+  <testcase name="searchGigaBerlin" classname="Kollex.Automation.WikipageTest" time="3.293"/>
+</testsuite>

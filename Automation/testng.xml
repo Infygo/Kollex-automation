@@ -11,6 +11,7 @@
   </test>
   <!-- Tests on chrome -->
   
+    
   <test name="FirefoxTest">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
