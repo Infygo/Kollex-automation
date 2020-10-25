@@ -2,6 +2,8 @@
 # Overview 
 The test methods have been designed and implemented for each step that was described in the pdf. Every test will have its starting point from the google page(Test1) and then navigates to the Giga berlin wikipedia page(Test2), collects the coordinate, logistics and site concerns data and will copy to the csv file,also takes a screenshot and open maps in new tab(Test3).
 
+![Alt text](https://github.com/Infygo/Kollex-automation/blob/master/Project%20folder%20structure%20screenshot.png)
+
 ### *Page class* 
 Each page in have the automation project suite has dedicated class ,where the locators and elements methods specific to that page will be implemented. The page class files are under the pageObjects package.
 
