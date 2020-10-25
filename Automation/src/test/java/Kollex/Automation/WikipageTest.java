@@ -51,7 +51,7 @@ public class WikipageTest extends Initialisation {
 		log.info("Wikipage Giga Berlin- Test success ");
 	}
 
-	// Test3 - Get Coordinate , Logistics, Site concerns
+	// Test3 - Get Coordinate , Logistics, Site concerns, Open maps with coordinates 
 	@Test(priority = 1)
 	public void getGigaBerlinData() throws InterruptedException, IOException {
 		wp = googleWikiNavigate();
