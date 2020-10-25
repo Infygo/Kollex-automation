@@ -38,7 +38,7 @@ The contents of this folder will be deleted before every execution run.
 
 *Method2* 
 - Download / clone the project from Git 
-- Open command prompt - change directory to the Kollex-automation-master\Automation
+- Open command prompt - change directory to the Kollex-automation-master/Automation
 - mvn compile 
 
 (To run the test in chrome use the command below in command prompt)
