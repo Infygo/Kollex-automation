@@ -1,9 +1,9 @@
 # Kollex-automation
 # Overview 
-The test methods have been designed and implemented for each step that was described in the pdf. Every test will have its starting point from the google page and then navigates to the Giga berlin wikipedia page, collects the coordinate, logistics and site concerns data and will copy to the csv file and also takes a screenshot.
+The test methods have been designed and implemented for each step that was described in the pdf. Every test will have its starting point from the google page(Test1) and then navigates to the Giga berlin wikipedia page(Test2), collects the coordinate, logistics and site concerns data and will copy to the csv file,also takes a screenshot and open maps in new tab(Test3).
 
 ### *Page class* 
-Each page in have the automation project has dedicated class ,where the locators and elements methods specific to that page will be implemented. The page class files are under the pageObjects package.
+Each page in have the automation project suite has dedicated class ,where the locators and elements methods specific to that page will be implemented. The page class files are under the pageObjects package.
 
 ### *Googlepage.java*
 This class file will have all the elements methods and locators needed in the google page 
