@@ -32,7 +32,7 @@ The contents of this folder will be deleted before every execution run.
 ### Installation & Execution 
 *Method1* - execution will make the tests to run in both chrome and firefox browser
 - Download / clone the project from Git 
-- Import project in IDE of your choice 
+- Import project in IDE of your choice - Code is in the Kollex-automation-master/Automation
 - Open testng.xml -> Run as TestNG Suite 
 - Open test output folder -> index.html -> to view the Test Results in consolidated manner
 
