@@ -30,6 +30,7 @@ The CSV data and screenshots can be found under src/main/java/csvdata_screenshot
 The contents of this folder will be deleted before every execution run.
 
 ### Installation & Execution 
+Make sure to have JAVA JDK and Maven installed and configured under Environment variables in your machine to have a successful execution.
 *Method1* - execution will make the tests to run in both chrome and firefox browser
 - Download / clone the project from Git 
 - Import project in IDE of your choice - Code is in the Kollex-automation-master/Automation
